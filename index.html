@@ -8,6 +8,103 @@
     <link href="dist/output.css" rel="stylesheet" />
   </head>
   <body>
+    <!-- Header Start -->
+    <header
+      class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
+    >
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="px-4">
+            <a href="#" class="text-lg font-bold text-primary block py-6"
+              >My Portofolio</a
+            >
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              id="hamburger"
+              class="block absolute right-4 lg:hidden"
+              type="button"
+              name="humburger"
+            >
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="text-base text-dark py-2 mx-8 hover:text-primary flex"
+                    >Beranda</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="text-base text-dark py-2 mx-8 hover:text-primary flex"
+                    >Tentang Saya</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#skill"
+                    class="text-base text-dark py-2 mx-8 hover:text-primary flex"
+                    >Skill</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#experience"
+                    class="text-base text-dark py-2 mx-8 hover:text-primary flex"
+                    >Pengalaman</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#work"
+                    class="text-base text-dark py-2 mx-8 hover:text-primary flex"
+                    >Portofolio</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#client"
+                    class="text-base text-dark py-2 mx-8 hover:text-primary flex"
+                    >Client</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#blog"
+                    class="text-base text-dark py-2 mx-8 hover:text-primary flex"
+                    >Blog</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#contact"
+                    class="text-base text-dark py-2 mx-8 hover:text-primary flex"
+                    >Kontak</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
     <!-- Hero section start -->
     <section id="home" class="pt-24">
       <div class="container">
@@ -30,7 +127,7 @@
 
             <a
               href="#"
-              class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+              class="text-base font-semibold text-white tracking-wide bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
               >Hubungi Saya</a
             >
             <span
@@ -51,7 +148,7 @@
             </span>
           </div>
           <div class="w-full self-end px-4 lg:w-1/2">
-            <div class="relative mt-10 lg:-mt-20">
+            <div class="relative mt-10 lg:-mt-0">
               <img
                 src="dist/img/fiki1.png"
                 alt="fiki"
@@ -218,12 +315,15 @@
       </div>
     </section>
     <!-- About section end -->
+
     <!-- Skill section start -->
-    <section class="">
+    <section id="skill">
       <div class="container">
         <div class="max-w-screen-lg px-4">
           <div>
-            <p class="text-4xl font-bold inline border-b-4 border-primary">
+            <p
+              class="text-2xl lg:text-4xl font-bold inline border-b-4 border-primary"
+            >
               Skills
             </p>
             <p class="py-6 font-medium text-secondary mb-2 lg:text-lg">
@@ -410,10 +510,12 @@
     <!-- skill section end -->
 
     <!-- Experience start -->
-    <section class="min-h-screen py-32">
+    <section id="experience" class="min-h-screen py-32">
       <div class="container">
         <div class="px-4">
-          <h1 class="text-4xl font-bold inline border-b-4 border-primary">
+          <h1
+            class="text-2xl lg:text-4xl font-bold inline border-b-4 border-primary"
+          >
             Pengalaman
           </h1>
           <p
@@ -434,7 +536,7 @@
           >
             <!-- Date -->
             <h1
-              class="absolute top-0 bg-priborder-primary w-max p-2.5 shadow-2xl text-2xl left-0"
+              class="absolute top-0 bg-priborder-primary w-max p-2.5 shadow-2xl text-xl left-0"
             >
               <!-- Replace this with actual date data -->
               January 2023 - February 2023
@@ -450,7 +552,9 @@
               Flutter Developer
             </h2>
             <!-- Description -->
-            <div class="text-lg mt-1 leading-8">
+            <div
+              class="mt-1 leading-8 ont-medium text-secondary text-base max-w-xl lg:text-lg"
+            >
               <!-- Replace this with actual description data -->
               <p>Proyek kloning WhatsApp ini memanfaatkan teknologi berikut:</p>
               <ul class="list-disc p-4">
@@ -478,7 +582,7 @@
           >
             <!-- Date -->
             <h1
-              class="absolute top-0 bg-priborder-primary w-max p-2.5 shadow-2xl text-2xl left-0"
+              class="absolute top-0 bg-priborder-primary w-max p-2.5 shadow-2xl text-xl left-0"
             >
               <!-- Replace this with actual date data -->
               January 2023 - February 2023
@@ -494,7 +598,9 @@
               Flutter Developer
             </h2>
             <!-- Description -->
-            <div class="text-lg mt-1 leading-8">
+            <div
+              class="mt-1 leading-8 ont-medium text-secondary text-base max-w-xl lg:text-lg"
+            >
               <!-- Replace this with actual description data -->
               <p>Proyek kloning WhatsApp ini memanfaatkan teknologi berikut:</p>
               <ul class="list-disc p-4">
@@ -515,13 +621,17 @@
     <!-- Experience end -->
 
     <!-- Work start -->
-    <div class="w-full py-32">
+    <div id="work" class="w-full py-32">
       <div class="container">
         <div class="px-4 mx-auto">
-          <h1 class="text-4xl font-bold inline border-b-4 border-primary">
+          <h1
+            class="text-2xl lg:text-4xl font-bold inline border-b-4 border-primary"
+          >
             Project Terbaru
           </h1>
-          <p class="text-xl py-6">
+          <p
+            class="py-6 ont-medium text-secondary text-base max-w-xl lg:text-lg"
+          >
             Selama pengalaman saya sebagai pengembang belajar mandiri, saya
             telah membuat beberapa proyek dan membagikannya di LinkedIn dan
             GitHub. Saya selalu mencari proyek-proyek baru dan menantang untuk
@@ -536,13 +646,13 @@
             href="#"
             target="_blank"
             rel="noreferrer"
-            class="bg-primary rounded-lg overflow-hidden transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-green-400 duration-300"
+            class="bg-green-400 rounded-lg overflow-hidden transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-primary duration-300"
           >
             <!-- Work image -->
             <img
               src="http://source.unsplash.com/1000x600?whatsapp-app"
               alt="work"
-              class="w-full h-36 md:h-48 object-cover"
+              class="w-full h-36 md:h-48 object-cover object-center"
             />
             <!-- Work details -->
             <div class="w-full p-5 text-black">
@@ -570,13 +680,13 @@
             href="#"
             target="_blank"
             rel="noreferrer"
-            class="bg-primary rounded-lg overflow-hidden transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-green-400 duration-300"
+            class="bg-green-400 rounded-lg overflow-hidden transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-primary duration-300"
           >
             <!-- Work image -->
             <img
               src="http://source.unsplash.com/1000x600?whatsapp-app"
               alt="work"
-              class="w-full h-36 md:h-48 object-cover"
+              class="w-full h-36 md:h-48 object-cover object-center"
             />
             <!-- Work details -->
             <div class="w-full p-5 text-black">
@@ -604,13 +714,13 @@
             href="#"
             target="_blank"
             rel="noreferrer"
-            class="bg-primary rounded-lg overflow-hidden transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-green-400 duration-300"
+            class="bg-green-400 rounded-lg overflow-hidden transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-primary duration-300"
           >
             <!-- Work image -->
             <img
               src="http://source.unsplash.com/1000x600?whatsapp-app"
               alt="work"
-              class="w-full h-36 md:h-48 object-cover"
+              class="w-full h-36 md:h-48 object-cover object-center"
             />
             <!-- Work details -->
             <div class="w-full p-5 text-black">
@@ -638,13 +748,13 @@
             href="#"
             target="_blank"
             rel="noreferrer"
-            class="bg-primary rounded-lg overflow-hidden transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-green-400 duration-300"
+            class="bg-green-400 rounded-lg overflow-hidden transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-primary duration-300"
           >
             <!-- Work image -->
             <img
               src="http://source.unsplash.com/1000x600?whatsapp-app"
               alt="work"
-              class="w-full h-36 md:h-48 object-cover"
+              class="w-full h-36 md:h-48 object-cover object-center"
             />
             <!-- Work details -->
             <div class="w-full p-5 text-black">
@@ -673,7 +783,8 @@
         </div>
       </div>
     </div>
-
     <!-- work end -->
+
+    <script src="dist/js/script.js"></script>
   </body>
 </html>
