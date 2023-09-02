@@ -36,3 +36,13 @@ hambuger.addEventListener('click', () => {
   hambuger.classList.toggle('hamburger-active')
   navMenu.classList.toggle('hidden')
 })
+
+// Scroll to Bottom
+const scrollToBottomButton = document.querySelector('#scroll-to-bottom')
+
+scrollToBottomButton.addEventListener('click', () => {
+  window.scrollTo({
+    top: document.documentElement.scrollHeight,
+    behavior: 'smooth',
+  })
+})
